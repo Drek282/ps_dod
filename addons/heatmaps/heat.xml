@@ -1,0 +1,147 @@
+<?xml version="1.0" ?>
+<maps>
+  <map name='dod_acclaim' gametype='halflife' modtype='dod'>
+    <minx>-1920</minx>
+    <miny>-3456</miny>
+    <maxx>2560</maxx>
+    <maxy>3584</maxy>
+    <res>589x941</res>
+    <flipv>1</flipv>
+    <fliph>0</fliph>
+  </map>
+  <map name='dod_advance' gametype='halflife' modtype='dod'>
+    <minx>-1152</minx>
+    <miny>-3968</miny>
+    <maxx>2176</maxx>
+    <maxy>3968</maxy>
+    <res>589x941</res>
+    <flipv>1</flipv>
+    <fliph>0</fliph>
+  </map>
+  <map name='dod_dummy' gametype='halflife' modtype='dod'>
+    <minx>1472</minx>
+    <miny>-3968</miny>
+    <maxx>-2176</maxx>
+    <maxy>4032</maxy>
+    <res>460x1015</res>
+    <flipv>1</flipv>
+    <fliph>0</fliph>
+  </map>
+  <map name='dod_edge2' gametype='halflife' modtype='dod'>
+    <minx>-2176</minx>
+    <miny>-3968</miny>
+    <maxx>1472</maxx>
+    <maxy>4032</maxy>
+    <res>460x1015</res>
+    <flipv>1</flipv>
+    <fliph>0</fliph>
+  </map>
+  <map name='dod_expire_b3' gametype='halflife' modtype='dod'>
+    <minx>-3840</minx>
+    <miny>-1508</miny>
+    <maxx>3608</maxx>
+    <maxy>1124</maxy>
+    <res>1005x354</res>
+    <flipv>1</flipv>
+    <fliph>0</fliph>
+  </map>
+  <map name='dod_freeze_b5' gametype='halflife' modtype='dod'>
+    <minx>-2112</minx>
+    <miny>-1024</miny>
+    <maxx>3648</maxx>
+    <maxy>3584</maxy>
+    <res>876x704</res>
+    <flipv>1</flipv>
+    <fliph>0</fliph>
+  </map>
+  <map name='dod_frost2' gametype='halflife' modtype='dod'>
+    <minx>-3326</minx>
+    <miny>-2562</miny>
+    <maxx>3076</maxx>
+    <maxy>3348</maxy>
+    <res>799x735</res>
+    <flipv>1</flipv>
+    <fliph>0</fliph>
+  </map>
+  <map name='dod_fury' gametype='halflife' modtype='dod'>
+    <minx>-2048</minx>
+    <miny>-2240</miny>
+    <maxx>2176</maxx>
+    <maxy>2816</maxy>
+    <res>679x785</res>
+    <flipv>1</flipv>
+    <fliph>0</fliph>
+  </map>
+  <map name='dod_muhle_b2' gametype='halflife' modtype='dod'>
+    <minx>-3978</minx>
+    <miny>-2054</miny>
+    <maxx>1872</maxx>
+    <maxy>1890</maxy>
+    <res>871x585</res>
+    <flipv>1</flipv>
+    <fliph>0</fliph>
+  </map>
+  <map name='dod_siracusa' gametype='halflife' modtype='dod'>
+    <minx>-1216</minx>
+    <miny>-2304</miny>
+    <maxx>2560</maxx>
+    <maxy>2496</maxy>
+    <res>589x742</res>
+    <flipv>1</flipv>
+    <fliph>0</fliph>
+  </map>
+  <map name='dod_snowcity_v3' gametype='halflife' modtype='dod'>
+    <minx>-3484</minx>
+    <miny>-3646</miny>
+    <maxx>3454</maxx>
+    <maxy>318</maxy>
+    <res>989x565</res>
+    <flipv>1</flipv>
+    <fliph>0</fliph>
+  </map>
+  <map name='dod_steinburg' gametype='halflife' modtype='dod'>
+    <minx>-3264</minx>
+    <miny>-2560</miny>
+    <maxx>1088</maxx>
+    <maxy>3136</maxy>
+    <res>629x818</res>
+    <flipv>1</flipv>
+    <fliph>0</fliph>
+  </map>
+  <map name='dod_strom_b4' gametype='halflife' modtype='dod'>
+    <minx>-2674</minx>
+    <miny>-2128</miny>
+    <maxx>2760</maxx>
+    <maxy>2458</maxy>
+    <res>943x797</res>
+    <flipv>1</flipv>
+    <fliph>0</fliph>
+  </map>
+  <map name='dod_tact_v5' gametype='halflife' modtype='dod'>
+    <minx>-1728</minx>
+    <miny>-3200</miny>
+    <maxx>3392</maxx>
+    <maxy>640</maxy>
+    <res>819x618</res>
+    <flipv>1</flipv>
+    <fliph>0</fliph>
+  </map>
+  <map name='dod_thunder' gametype='halflife' modtype='dod'>
+    <minx>-3968</minx>
+    <miny>-3840</miny>
+    <maxx>3840</maxx>
+    <maxy>2304</maxy>
+    <res>974x760</res>
+    <flipv>1</flipv>
+    <fliph>0</fliph>
+  </map>
+  <map name='dod_vire' gametype='halflife' modtype='dod'>
+    <minx>-1168</minx>
+    <miny>-3456</miny>
+    <maxx>2560</maxx>
+    <maxy>528</maxy>
+    <res>699x746</res>
+    <flipv>1</flipv>
+    <fliph>0</fliph>
+  </map>
+</maps>
