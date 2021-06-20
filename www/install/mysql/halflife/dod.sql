@@ -161,3 +161,7 @@ INSERT INTO `ps_config_overlays` (`id`, `gametype`, `modtype`, `map`, `minx`, `m
         (71, 'halflife', 'dod', 'dod_tact_v5', -1728, -3200, 3392, 640, 819, 618, 1, 0, 0),
         (72, 'halflife', 'dod', 'dod_thunder', -3968, -3840, 3840, 2304, 974, 760, 1, 0, 0),
         (73, 'halflife', 'dod', 'dod_vire', -1168, -3456, 2560, 528, 699, 746, 1, 0, 0);
+        
+INSERT INTO `ps_config` (`id`, `conftype`, `section`, `var`, `value`, `label`, `type`, `locked`, `verifycodes`, `options`, `help`) 
+    VALUES 
+        (1,'main',NULL,'meta_keywords','PsychoStats Game Server Player Statistics Day of Defeat DOD Valve','Site HTML Meta Key Words','text',0,'','','These are the HTML meta key words for your PsychoStats.  They are used by search engines to provide search results.');
