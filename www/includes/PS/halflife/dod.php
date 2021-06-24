@@ -52,9 +52,13 @@ var $CLAN_MODTYPES = array(
 	'axisscorepct'		=> array( 'percent2', 'axisscore', 'alliesscore' ),
 );
 
-function PS_halflife_dod(&$db) {
+function __construct(&$db) {
 	parent::PS_halflife($db);
 	$this->CLAN_MAP_MODTYPES = $this->CLAN_MODTYPES;
+}
+
+function PS_halflife_dod(&$db) {
+    self::__construct($db);
 }
 
 // Add 'top10' player lists to the map.php page
