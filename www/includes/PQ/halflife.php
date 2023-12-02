@@ -30,10 +30,10 @@
 	There is an 'oldhalflife' query_type that can be used to force older halflife queries.
 
 	Query:		HL1 send:	HL1 recv: 	HL2 send: 	HL2 recv:
-	'info'		'T'		'm'		'T'		'I'	(different packet stream)
-	'players'	'U'		'D'		'U'		'D'	(the same)
-	'rules'		'V'		'o'		'V'		'E'	(different codes, same packet stream)
-	'ping'		'i'		'j'		'i'		'j'	(the same)
+	'info'				'T'			'm'			'T'			'I'	(different packet stream)
+	'players'			'U'			'D'			'U'			'D'	(the same)
+	'rules'				'V'			'o'			'V'			'E'	(different codes, same packet stream)
+	'ping'				'i'			'j'			'i'			'j'	(the same)
 
 	RCON commands are also supported for both versions, HL1 and HL2 (transparently)
 
@@ -94,6 +94,10 @@ function gametype() {
 
 function modtype() {
 	$m = $this->data['gamedir'] ?? null;
+	switch ($m) { // This switch might need to be removed, or edited for DoD - Rosenstein
+		case 'czero': 	return 'cstrike';
+		default: 	return $m;
+	}
 	return $m;
 }
 
@@ -147,6 +151,7 @@ function query_info($ip=NULL) {
 	$start = $this->_getmicrotime();
 	$res = $this->_sendquery($ip, $this->infostr);
 	$end = $this->_getmicrotime();
+	$res = $this->_sendquery($ip, $this->infostr . pack("V", $this->_getchallenge($ip)));
 	if (!$res) return FALSE;
 	$ver = $this->_hlver();			// get proper version 
 	$this->data = array();			// query_info always resets the data array (so call this before other queries)
@@ -568,7 +573,7 @@ function _sendquery($ipport, $cmd) {
 		}
 
 		$time = sprintf("%0.4f", $this->_getmicrotime() - $start);
-		if ($this->DEBUG) print nl2br("\nDEBUG: ($time latency) Received " . strlen($packet) . " bytes from $ip:$port ...\n"); // . $this->hexdump($packet) . "\n");
+		if ($this->DEBUG) print nl2br("\nDEBUG: ($time latency) Received " . strlen($packet) . " bytes from $ip:$port ...\n");// . $this->hexdump($packet) . "\n");
 
 		$header = substr($packet, 0, 4);				// get the 4 byte header
 		// ugly 64bit hack. If the PHP_INT_SIZE is not 4 then we'll use "i" to unpack the header.
