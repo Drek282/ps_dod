@@ -94,10 +94,6 @@ function gametype() {
 
 function modtype() {
 	$m = $this->data['gamedir'] ?? null;
-	switch ($m) { // This switch might need to be removed, or edited for DoD - Rosenstein
-		case 'czero': 	return 'cstrike';
-		default: 	return $m;
-	}
 	return $m;
 }
 
